@@ -27,7 +27,8 @@ public class Setup {
 		handlessOptions.addArguments("--disable-dev-shm-usage");
 		handlessOptions.addArguments("--disable-browser-side-navigation");
 		handlessOptions.addArguments("--disable-gpu");
-		URL url = new URL("http://localhost:4444/wd/hub");
+		//URL url = new URL("http://localhost:4444/wd/hub");
+		URL url = new URL("http://172.31.0.70:4444/wd/hub");
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, handlessOptions);
 		handlessOptions.merge(capabilities);
