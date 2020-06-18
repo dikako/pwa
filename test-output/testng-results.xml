@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="49876" started-at="2020-06-18T10:31:56Z" finished-at="2020-06-18T10:32:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="49876" started-at="2020-06-18T10:31:56Z" finished-at="2020-06-18T10:32:46Z">
+      <class name="testcases.Test_Login">
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Login@13805618]" name="set" is-config="true" duration-ms="1900" started-at="2020-06-18T17:31:57Z" finished-at="2020-06-18T17:31:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_alert_popup(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Login@13805618]" name="login_alert_popup" duration-ms="23033" started-at="2020-06-18T17:31:59Z" data-provider="login_alert_popup" finished-at="2020-06-18T17:32:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dixosgadpoyt@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passwordslah]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User has not been registered]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_alert_popup -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Login@13805618]" name="done" is-config="true" duration-ms="65" started-at="2020-06-18T17:32:22Z" finished-at="2020-06-18T17:32:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+        <test-method status="PASS" signature="set()[pri:0, instance:testcases.Test_Login@13805618]" name="set" is-config="true" duration-ms="1267" started-at="2020-06-18T17:32:22Z" finished-at="2020-06-18T17:32:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set -->
+        <test-method status="PASS" signature="login_alert_popup(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:testcases.Test_Login@13805618]" name="login_alert_popup" duration-ms="23021" started-at="2020-06-18T17:32:23Z" data-provider="login_alert_popup" finished-at="2020-06-18T17:32:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[628229098776544]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passwordslah]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User has not been registered]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_alert_popup -->
+        <test-method status="PASS" signature="done()[pri:0, instance:testcases.Test_Login@13805618]" name="done" is-config="true" duration-ms="66" started-at="2020-06-18T17:32:46Z" finished-at="2020-06-18T17:32:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- done -->
+      </class> <!-- testcases.Test_Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
