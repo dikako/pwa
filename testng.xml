@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="testcases.Test_Login"/>
+      <class name="testcases.Test_List_Menu_Account"/>
       <class name="testcases.Test_Integration_Login"/>
     </classes>
   </test> <!-- Test -->
