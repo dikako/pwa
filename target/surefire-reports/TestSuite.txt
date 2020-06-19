@@ -1,20 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 36, Failures: 1, Errors: 0, Skipped: 35, Time elapsed: 64.043 s <<< FAILURE! - in TestSuite
-testcases.Test_Login.set  Time elapsed: 63.219 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Unable to parse remote response: <html>
-<head><title>504 Gateway Time-out</title></head>
-<body bgcolor="white">
-<center><h1>504 Gateway Time-out</h1></center>
-<hr><center>nginx</center>
-</body>
-</html>
-
-Caused by: org.openqa.selenium.json.JsonException: 
-Unable to determine type from: <. Last 1 characters read: <
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MNCTVN05589', ip: '192.168.2.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: RemoteWebDriver
-
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1,156.938 s - in TestSuite
