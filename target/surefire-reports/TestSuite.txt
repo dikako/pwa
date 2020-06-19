@@ -1,17 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1,004.85 s <<< FAILURE! - in TestSuite
-testcases.Test_Integration_Login.login_logout_from_history  Time elapsed: 41.12 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#action\-history"}
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Tests run: 36, Failures: 1, Errors: 0, Skipped: 35, Time elapsed: 64.043 s <<< FAILURE! - in TestSuite
+testcases.Test_Login.set  Time elapsed: 63.219 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to parse remote response: <html>
+<head><title>504 Gateway Time-out</title></head>
+<body bgcolor="white">
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+Caused by: org.openqa.selenium.json.JsonException: 
+Unable to determine type from: <. Last 1 characters read: <
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MNCTVN05589', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.zi5NIn}, goog:chromeOptions: {debuggerAddress: localhost:34923}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: fdf2d9c4f83f3a2b981a62335d5...}
-Session ID: fdf2d9c4f83f3a2b981a62335d53b67f
-*** Element info: {Using=id, value=action-history}
-	at testcases.Test_Integration_Login.login_logout_from_history(Test_Integration_Login.java:74)
+System info: host: 'MNCTVN05589', ip: '192.168.2.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: RemoteWebDriver
 

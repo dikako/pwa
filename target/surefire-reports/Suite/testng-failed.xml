@@ -11,16 +11,17 @@
     <classes>
       <class name="testcases.Test_Integration_Login">
         <methods>
-          <include name="done"/>
-          <include name="set"/>
-          <include name="login_logout_from_history" invocation-numbers="1"/>
+          <include name="login_logout_from_account"/>
+          <include name="login_logout_from_history"/>
+          <include name="login_logout_from_Continue_Watching"/>
           <include name="login_logout_from_mylist"/>
         </methods>
       </class> <!-- testcases.Test_Integration_Login -->
       <class name="testcases.Test_Login">
         <methods>
-          <include name="done"/>
+          <include name="login_alert_popup"/>
           <include name="set"/>
+          <include name="login_logout"/>
         </methods>
       </class> <!-- testcases.Test_Login -->
     </classes>
