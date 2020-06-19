@@ -14,7 +14,7 @@ import utility.ReadExcel;
 
 public class Test_Login extends Setup {
 
-	public String path = "../pwa/src/main/java/data/data_test.xlsx";
+	public String path = "../xyz-pwa/src/main/java/data/data_test.xlsx";
 
 	@DataProvider
 	public String[][] login_success() throws InvalidFormatException, IOException {
