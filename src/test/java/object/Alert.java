@@ -20,7 +20,17 @@ public class Alert {
 		waitForVisible(driver, element);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
-		Assert.assertEquals(element.getText().toLowerCase().replace(" ", ""), alertText.toLowerCase().replace(" ", ""));
+		Assert.assertEquals(element.getText().toLowerCase().replace(" ", "").replace("\n", "").replace("\n", ""), alertText.toLowerCase().replace(" ", "").replace("\n", "").replace("\n", ""));
+		actions.build().perform();
+		System.out.println(element.getText());
+	}
+	
+	public void byClass(String selector, String alertText) {
+		WebElement element = driver.findElement(By.className(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		Assert.assertEquals(element.getText().toLowerCase().replace(" ", "").replace("\n", "").replace("\n", ""), alertText.toLowerCase().replace(" ", "").replace("\n", "").replace("\n", ""));
 		actions.build().perform();
 		System.out.println(element.getText());
 	}
@@ -30,7 +40,7 @@ public class Alert {
 		waitForVisible(driver, element);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
-		Assert.assertEquals(element.getText().toLowerCase().replace(" ", ""), alertText.toLowerCase().replace(" ", ""));
+		Assert.assertEquals(element.getText().toLowerCase().replace(" ", "").replace("\n", ""), alertText.toLowerCase().replace(" ", "").replace("\n", ""));
 		actions.build().perform();
 		System.out.println(element.getText());
 	}
@@ -40,7 +50,7 @@ public class Alert {
 		waitForVisible(driver, element);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
-		Assert.assertEquals(element.getText().toLowerCase().replace(" ", ""), alertText.toLowerCase().replace(" ", ""));
+		Assert.assertEquals(element.getText().toLowerCase().replace(" ", "").replace("\n", ""), alertText.toLowerCase().replace(" ", "").replace("\n", ""));
 		actions.build().perform();
 		System.out.println(element.getText());
 	}
@@ -50,7 +60,7 @@ public class Alert {
 		waitForVisible(driver, element);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
-		Assert.assertEquals(element.getText().toLowerCase().replace(" ", ""), alertText.toLowerCase().replace(" ", ""));
+		Assert.assertEquals(element.getText().toLowerCase().replace(" ", "").replace("\n", ""), alertText.toLowerCase().replace(" ", "").replace("\n", ""));
 		actions.build().perform();
 		System.out.println(element.getText());
 	}
@@ -60,7 +70,7 @@ public class Alert {
 		waitForVisible(driver, element);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
-		Assert.assertEquals(element.getText().toLowerCase().replace(" ", ""), alertText.toLowerCase().replace(" ", ""));
+		Assert.assertEquals(element.getText().toLowerCase().replace(" ", "").replace("\n", ""), alertText.toLowerCase().replace(" ", "").replace("\n", ""));
 		actions.build().perform();
 		System.out.println(element.getText());
 	}
@@ -70,9 +80,59 @@ public class Alert {
 		waitForVisible(driver, element);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element);
-		Assert.assertEquals(element.getText().toLowerCase().replace(" ", ""), alertText.toLowerCase().replace(" ", ""));
+		Assert.assertEquals(element.getText().toLowerCase().replace(" ", "").replace("\n", ""), alertText.toLowerCase().replace(" ", "").replace("\n", ""));
 		actions.build().perform();
 		System.out.println(element.getText());
+	}
+	
+	public void byIdDisplay(String selector, boolean display) {
+		WebElement element = driver.findElement(By.id(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		Assert.assertEquals(element.isDisplayed(), display);
+		actions.build().perform();
+		System.out.println("Alert is Display");
+	}
+	
+	public void byXpathDisplay(String selector, boolean display) {
+		WebElement element = driver.findElement(By.xpath(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		Assert.assertEquals(element.isDisplayed(), display);
+		actions.build().perform();
+		System.out.println("Alert is Display");
+	}
+	
+	public void byNameDisplay(String selector, boolean display) {
+		WebElement element = driver.findElement(By.name(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		Assert.assertEquals(element.isDisplayed(), display);
+		actions.build().perform();
+		System.out.println("Alert is Display");
+	}
+	
+	public void byCssDisplay(String selector, boolean display) {
+		WebElement element = driver.findElement(By.cssSelector(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		Assert.assertEquals(element.isDisplayed(), display);
+		actions.build().perform();
+		System.out.println("Alert is Display");
+	}
+	
+	public void byTagDisplay(String selector, boolean display) {
+		WebElement element = driver.findElement(By.tagName(selector));
+		waitForVisible(driver, element);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		Assert.assertEquals(element.isDisplayed(), display);
+		actions.build().perform();
+		System.out.println("Alert is Display");
 	}
 	
 	private void waitForVisible(WebDriver driver, WebElement element) {
